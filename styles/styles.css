@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 200px;
+    text-align: center;
+    /* background-color: brown; */
+}
+
+/* #heading div {
+    border: 1px solid black;
+} */
+
+img {
+    border-radius: 30px;
+}
+.instructions{
+    width: 33%;
+    height: 90%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+p{
+    font-size: 18px;
+    text-decoration: underline wavy rgb(22, 150, 235);
+}
+#start-button {
+    background-color: rgb(128, 128, 128);
+    box-shadow: 0;
+    border: 0;
+    border-radius: 10px 20px;
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+#start-button:hover{
+    box-shadow: 5px 6px 16px 0 rgba(0,0,0,0.24), 5px 12px 50px 0 rgba(0,0,0,0.19);
+}
+
+.arrows {
+    width: 28%;
+    height: 90%;
+    position: relative;
+}
+div[class^='box'] {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(228, 227, 227);
+    border: 1px solid black;
+}
+
+.box-1{
+    width: 50px;
+    height: 20px;
+    top: 50px;
+    left: 150px;
+    border-radius: 5px 5px 0px 0px;
+}
+.box-2 {
+    width: 50px;
+    height: 20px;
+    top: 75px;
+    left: 150px;
+    border-radius: 0px 0px 5px 5px;
+}
+.box-3{
+    width: 50px;
+    height: 47px;
+    top: 50px;
+    left: 95px;
+    border-radius: 5px;
+}
+.box-4{
+    width: 50px;
+    height: 47px;
+    top: 50px;
+    left: 205px;
+    border-radius: 5px 5px 15px 5px;
+}
+
+.space-bar{
+    position: absolute;
+    background-color: rgb(228, 227, 227);
+    border: 1px solid black;    
+    width: 200px;
+    height: 40px;
+    top: 110px;
+    left: 78px;
+    border-radius: 5px;
+}
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    
+    border-bottom: 10px solid black;
+  }
+  
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    
+    border-top: 10px solid black;
+  }
+  
+.arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    
+    border-left: 10px solid black;
+  }
+  
+  .arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    
+    border-right:10px solid black; 
+  }
+
+#game-board{
+    width: 95%;
+    height: 400px;
+    position: relative;
+    background-image: url(../images/8516.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    border: 1px solid rgb(65, 73, 54);
+}
+
+
+canvas{
+    /* border: 2px solid brown; */
+    margin-left: 70px;
+    margin-top: 25px;
+}
+
+#game-board button{
+    position: absolute;
+    height: 90px;
+    border: 0;
+    box-shadow: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 40px;
+    font-family: "Verdana";
+}
+
+#yesButton {
+    width: 150px;
+    top: 280px;
+    left: 400px;
+    background-color: green;
+    color: white;
+    visibility: hidden;
+}
+
+#noButton {
+    width: 150px;
+    top: 280px;
+    left: 650px;
+    background-color: red;
+    color: white;
+    visibility: hidden;
+}
+
+#restart {
+    width: 200px;
+    top: 280px;
+    left: 550px;
+    background-color: skyblue;
+    color: blue;
+    visibility: hidden;
+}
